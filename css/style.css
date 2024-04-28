@@ -124,3 +124,9 @@ main {
 .sidebar-button:hover {
   background-color: var(--activeBakground);
 }
+
+.video {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}

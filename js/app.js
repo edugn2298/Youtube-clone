@@ -53,8 +53,8 @@ fetch('./data/youtube-videos.json')
         div.innerHTML = `
           ${dato[0].imagen}
           <h2>${dato[0].titulo}</h2>
-          ${dato[0].creador_de_contenido}
           ${dato[0].imagen_creador_de_contenido}
+          ${dato[0].creador_de_contenido}
           <p>${dato[0].visualizaciones}</p>
         `;
         video_div.appendChild(div);
