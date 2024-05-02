@@ -125,7 +125,7 @@ main {
 .content {
   display: grid;
   grid-template-rows: 6% 94%;
-  padding-left: 17%;
+  padding-left: 2%;
   padding-right: 2%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -135,7 +135,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;S
+  align-items: center;
 }
 
 .suggest-menu > p {
