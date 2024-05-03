@@ -26,9 +26,10 @@ svg, img {
 }
 
 .youtube-logo {
-  max-width: 100px;
+  max-width: 110px;
 }
 
+/* Navegacion */
 nav {
   display: flex;
   justify-content: space-between;
@@ -47,9 +48,9 @@ nav > div {
 }
 
 .barra-izquierda > a {
-  padding: 10px;
+  padding: 12px;
   border-radius: 100%;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 .barra-busqueda {
@@ -65,12 +66,18 @@ nav > div {
 }
 
 .barra-derecha > a {
-  padding: 10px;
+  padding: 12px;
   border-radius: 100%;
-  font-size: 16px;
+  font-size: 22px;
 }
 
-.barra-izquierda > a:hover,.barra-derecha > a:hover, form > .barra-busqueda > a:hover {
+.barra-izquierda > a:hover,
+.barra-derecha > a:hover, 
+form > .barra-busqueda > a:hover ,
+.search-button:hover, 
+.voice-search:hover, 
+.sidebar-button:hover,
+.voice-search:hover {
   background-color: var(--activeBakground);
   cursor: pointer;
 }
@@ -98,14 +105,11 @@ form {
   padding: 13px 15px;
 }
 
-.voice-search:hover {
-  background-color: var(--activeBakground);
-}
-
 .sidebar { 
   display: none;
 }
 
+/* Contenido Principal */
 
 .content {
   display: flex;
@@ -113,6 +117,8 @@ form {
   flex-grow: 1;
   padding-bottom: 20px;
 }
+
+/* Sugerencias */
 
 .suggest-menu {
   display: flex;
@@ -123,13 +129,14 @@ form {
 
 .suggest-menu > p {
   margin: 10px;
-  padding: 12px;
+  padding: 12px 11px;
   background-color: var(--borderColor);
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 13px;
   font-weight: 800;
 }
 
+/* Videos */
 .video {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -167,6 +174,7 @@ form {
   flex-direction: column;
   justify-content: space-around;
   gap: 5px;
+  margin: 3px;
 }
 
 .video-info > a, .video-info > p, .video-info > a:active{
@@ -174,18 +182,8 @@ form {
   color: var(--secundaryLetters);
 }
 
-.video-info {
-  margin: 3px;
-}
-
 .video-info > h2 {
   font-size: 14px;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -207,9 +205,6 @@ form {
     margin: 0 auto;
   }
   
-  .sidebar-button:hover {
-    background-color: var(--activeBakground);
-  }
 
   .search-button{
     border-radius: 0px 20px 20px 0px;
@@ -232,7 +227,7 @@ form {
 
 /* Estilo para la barra de desplazamiento */
 body::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 body::-webkit-scrollbar-track {
